@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------
+	* 全体構造
+-------------------------------------------------- */
+
+html {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   color: #4a4a4a;
+   line-height: 1.5;
+   background-color: #fff;
+}
+
+h1,h2,h3,h4 {
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+}
+
+h1 {
+   font-size: 24px;
+}
+
+h2 {
+   font-size: 28px;
+   text-align: center;
+}
+
+h3 {
+   font-size: 18px;
+   text-align: center;
+}
+
+p, a {
+   margin: 0;
+   padding: 0;
+   font-size: 18px;
+   color: #4a4a4a;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   opacity: 0.7;
+}
+
+ul {
+   padding: 0;
+   margin: 0;
+}
+
+li {
+   list-style: none;
+}
+
+.inner {
+   padding: 70px 50px;
+   max-width: 980px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.line {
+   background-color: #4a4a4a;
+   width     : 55px;
+   height    : 1px;
+   margin    : 30px auto 60px;
+}
+
+
+/* ------------------------------------------------
+	* ヘッダー
+-------------------------------------------------- */
+
+header {
+   height: 10vh;
+   background-color: #343a40;
+   color: #fff;
+}
+
+header .inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+   height: 100%;
+   max-width: 980px;
+   margin: 0 auto;
+}
+
+header ul {
+   display: flex;
+}
+
+header li {
+   padding: 0 20px;
+}
+
+
+/* ------------------------------------------------
+	* メインビジュアル
+-------------------------------------------------- */
+
+.mainvisual {
+   height: 80vh;
+   background-image: url(images/mainvisual.avif);
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+.mainvisual::before{
+   background-color: rgba(0,0,0,0.6);
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   content: ' ';
+}
+
+.mainvisual h2 {
+   text-align: center;
+   color: #fff;
+   font-size: 42px;
+   font-weight: bold;
+   line-height: 2;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------
+	* ABOUT
+-------------------------------------------------- */
+.about {
+    background-color: #e2e4e4;
+}
+.about p{
+    line-height: 2.5;
+}
+
+/* ------------------------------------------------
+	* NEWS
+-------------------------------------------------- */
+
+.news .inner {
+   text-align: left;
+}
+
+.news ul {
+   margin-bottom: 80px;
+}
+
+.news li {
+   border-bottom: 1px dotted #ccc;
+   padding: 5px 0;
+}
+
+.news li span {
+   margin-right: 30px;
+}
+
+.news-btn {
+   display: block;
+   width: 150px;
+   text-align: center;
+   color: #4a4a4a;
+   background-color: #e2e4e4;
+   font-size: 16px;
+   margin: 0 auto;
+   padding: 10px 0;
+   border: 1px solid #4a4a4a;
+   border-radius: 5px;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+.news-btn:hover {
+   opacity: 0.7;
+}
+
+/* ------------------------------------------------
+	* WORKS
+-------------------------------------------------- */
+
+.works {
+   background-color: #e2e4e4;
+}
+
+.works-card-wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.works-card-wrapper:last-child {
+   margin-top: 30px;
+}
+
+.works-card {
+   width: 30%;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+.works-card img {
+   width: 100%;
+   height: 150px;
+   object-fit: cover;
+}
+
+.works h3 {
+   padding: 10px;
+}
+
+/* ------------------------------------------------
+	* ACCESS
+-------------------------------------------------- */
+
+.access {
+   background-color: #fff;
+}
+
+/* ------------------------------------------------
+	* CONTACT
+-------------------------------------------------- */
+
+.contact {
+   background-color: #e2e4e4;
+}
+
+input {
+   width: 600px;
+   padding:10px 0;
+   margin-bottom: 30px;
+}
+
+textarea {
+   width: 600px;
+   padding: 5px 0 120px 0;
+   margin-bottom: 30px;
+}
+
+.contact-btn {
+   width: 150px;
+   color: #fff;
+   background-color: rgb(71, 189, 236);
+   font-size: 16px;
+   padding: 10px 0;
+   border: 1px solid #333;
+   border-radius: 5px;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+.contact-btn:hover{
+   opacity: 0.7;
+}
+
+/* ------------------------------------------------
+	* フッター
+-------------------------------------------------- */
+
+footer {
+   background-color: #4a4a4a;
+   text-align: center;
+}
+
+footer p {
+   color: #fff;
+   padding: 20px 0;
+}
