@@ -152,13 +152,127 @@ header li {
 /* ------------------------------------------------
 	* NEWS
 -------------------------------------------------- */
-.news .inner{
-    text-align: left;
+
+.news .inner {
+   text-align: left;
 }
-.news ul{
-    margin-bottom: 80px;
+
+.news ul {
+   margin-bottom: 80px;
 }
-.news .li{
-    border-bottom: 1pc dotted #ccc;
-    padding: 5px 0;      
+
+.news li {
+   border-bottom: 1px dotted #ccc;
+   padding: 5px 0;
+}
+
+.news li span {
+   margin-right: 30px;
+}
+
+.news-btn {
+   display: block;
+   width: 150px;
+   text-align: center;
+   color: #4a4a4a;
+   background-color: #e2e4e4;
+   font-size: 16px;
+   margin: 0 auto;
+   padding: 10px 0;
+   border: 1px solid #4a4a4a;
+   border-radius: 5px;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+.news-btn:hover {
+   opacity: 0.7;
+}
+
+/* ------------------------------------------------
+	* WORKS
+-------------------------------------------------- */
+
+.works {
+   background-color: #e2e4e4;
+}
+
+.works-card-wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.works-card-wrapper:last-child {
+   margin-top: 30px;
+}
+
+.works-card {
+   width: 30%;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+.works-card img {
+   width: 100%;
+   height: 150px;
+   object-fit: cover;
+}
+
+.works h3 {
+   padding: 10px;
+}
+
+/* ------------------------------------------------
+	* ACCESS
+-------------------------------------------------- */
+
+.access {
+   background-color: #fff;
+}
+
+/* ------------------------------------------------
+	* CONTACT
+-------------------------------------------------- */
+
+.contact {
+   background-color: #e2e4e4;
+}
+
+input {
+   width: 600px;
+   padding:10px 0;
+   margin-bottom: 30px;
+}
+
+textarea {
+   width: 600px;
+   padding: 5px 0 120px 0;
+   margin-bottom: 30px;
+}
+
+.contact-btn {
+   width: 150px;
+   color: #fff;
+   background-color: rgb(71, 189, 236);
+   font-size: 16px;
+   padding: 10px 0;
+   border: 1px solid #333;
+   border-radius: 5px;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+.contact-btn:hover{
+   opacity: 0.7;
+}
+
+/* ------------------------------------------------
+	* フッター
+-------------------------------------------------- */
+
+footer {
+   background-color: #4a4a4a;
+   text-align: center;
+}
+
+footer p {
+   color: #fff;
+   padding: 20px 0;
 }
