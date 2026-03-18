@@ -1,0 +1,270 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    word-break: normal
+}
+
+*,:after,:before {
+    background-repeat: no-repeat;
+    box-sizing: inherit
+}
+
+:after,:before {
+    text-decoration: inherit;
+    vertical-align: inherit
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+hr {
+    color: inherit;
+    height: 0;
+    overflow: visible
+}
+
+details,main {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+small {
+    font-size: 80%
+}
+
+[hidden] {
+    display: none
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,a:hover {
+    outline-width: 0
+}
+
+code,kbd,pre,samp {
+    font-family: monospace,monospace
+}
+
+pre {
+    font-size: 1em
+}
+
+b,strong {
+    font-weight: bolder
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+table {
+    border-color: inherit;
+    text-indent: 0
+}
+
+iframe {
+    border-style: none
+}
+
+input {
+    border-radius: 0
+}
+
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical
+}
+
+button,input,optgroup,select,textarea {
+    font: inherit
+}
+
+optgroup {
+    font-weight: 700
+}
+
+button {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+[role=button],[type=button],[type=reset],[type=submit],button {
+    cursor: pointer
+}
+
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+[type=reset],[type=submit],button,html [type=button] {
+    -webkit-appearance: button
+}
+
+button,input,select,textarea {
+    background-color: transparent;
+    border-style: none
+}
+
+a:focus,button:focus,input:focus,select:focus,textarea:focus {
+    outline-width: 0
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none
+}
+
+select::-ms-expand {
+    display: none
+}
+
+select::-ms-value {
+    color: currentColor
+}
+
+legend {
+    border: 0;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    color: inherit;
+    font: inherit
+}
+
+[disabled] {
+    cursor: default
+}
+
+img {
+    border-style: none
+}
+
+progress {
+    vertical-align: baseline
+}
+
+[aria-busy=true] {
+    cursor: progress
+}
+
+[aria-controls] {
+    cursor: pointer
+}
+
+[aria-disabled=true] {
+    cursor: default
+}
+
+ul{
+    list-style: none;
+}
+.mainvisual{
+    margin-bottom: 80px;
+}
+.site-title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Helvetica Neue";
+    padding: 10px 0;
+}
+.text{
+    text-align: center;
+    padding: 0 20px;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+.text .site-title{
+    margin-bottom: 20px;
+}
+.flex{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.flex li{
+    width: calc(100%/3);
+}
+
+.flex li img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.text .btn{
+    display: inline-block;
+    border: solid 1px #000;
+    font-size: 0.875rem;
+    padding: 18px 60px;
+    text-decoration: none;
+}
+
+.footer{
+    font-size: 0.75rem;
+    padding: 20px;
+    text-align: center
+}
+.footer .link{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer .link li{
+    margin: 0 10px;
+}
