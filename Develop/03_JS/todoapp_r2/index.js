@@ -1,0 +1,19 @@
+import { App } from "./src/app.js";
+
+const formElement = document.querySelector("#js-form");
+const formInputElement = document.querySelector("#js-form-input");
+const formCountElement = document.querySelector("#js-todo-count");
+const todoListContainerElement = document.querySelector("#js-todo-list");
+
+const app = new App(
+  formElement,
+  formInputElement,
+  formCountElement,
+  todoListContainerElement,
+);
+window.addEventListener("load", () => {
+  app.mount();
+});
+window.addEventListener("unload", () => {
+  app.unmount();
+});
