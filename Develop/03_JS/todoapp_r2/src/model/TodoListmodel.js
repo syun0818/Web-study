@@ -7,7 +7,7 @@ export class TodoListModel extends EventEmitter {
    */
   constructor(item = []) {
     super();
-    this.#items = items;
+    this.#items = item;
   }
   /**
    * TodoItemの合計個数を返す
@@ -55,7 +55,7 @@ export class TodoListModel extends EventEmitter {
    * 指定したidのTodoItemのcompletedを更新する
    * @param {{ id:number, completed: boolean }}
    */
-  updatetodo({ id, completed }) {
+  updateTodo({ id, completed }) {
     const todoItem = this.#items.find((todo) => todo.id === id);
     if (!todoItem) {
       return;

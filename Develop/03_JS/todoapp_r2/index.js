@@ -1,4 +1,4 @@
-import { App } from "./src/app.js";
+import { App } from "./src/App.js";
 
 const formElement = document.querySelector("#js-form");
 const formInputElement = document.querySelector("#js-form-input");

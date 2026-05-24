@@ -10,11 +10,11 @@ export class TodoItemView {
    */
   createElement(todoItem, { onUpdateTodo, onDeleteTodo }) {
     const todoItemElement = todoItem.completed
-      ? element`<li><input type="checkbox" checked>
+      ? element`<li><input type="checkbox" class="checkbox" checked>
             <s>${todoItem.title}</s>
             <button class="delete">x</button>
             </li>`
-      : element`<li><input type="checkbox">
+      : element`<li><input type="checkbox" class="checkbox">
             ${todoItem.title}
             <button class="delete">x</button>
             </li>`;

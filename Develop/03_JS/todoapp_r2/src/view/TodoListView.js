@@ -1,5 +1,5 @@
-import { element } from "./html-util,js";
-import { todoItemView } from "./TodoItemView.js";
+import { element } from "./html-util.js";
+import { TodoItemView } from "./TodoItemView.js";
 
 export class TodoListView {
   /**
@@ -11,14 +11,15 @@ export class TodoListView {
    */
   createElement(todoItems, { onUpdateTodo, onDeleteTodo }) {
     const todoListElement = element`<ul></ul>`;
+    // 各TodoItemモデルに対応したHTML要素を作成し、リスト要素へ追加する
     todoItems.forEach((todoItem) => {
       const todoItemView = new TodoItemView();
-      const todoItemElement = TodoItemView.createElement(todoItem, {
-        onUpdateTodo,
+      const todoItemElement = todoItemView.createElement(todoItem, {
         onDeleteTodo,
+        onUpdateTodo,
       });
       todoListElement.appendChild(todoItemElement);
     });
-    return todoItemElement;
+    return todoListElement;
   }
 }

@@ -31,14 +31,14 @@ export class EventEmitter {
    * @param {string} type イベント名
    * @param {Function} listener イベントリスナー
    */
-  removeEventListener(typ, listener) {
+  removeEventListener(type, listener) {
     const listenerSet = this.#listeners.get(type);
     if (!listenerSet) {
       return;
     }
-    listenerSet.forEach((qwnListener) => {
-      if (ownListener == listener) {
-        listenerSet.delete(listener);
+    listenerSet.forEach((ownListener) => {
+      if (ownListener === listener) {
+        listenerSet.delete(ownListener);
       }
     });
   }
